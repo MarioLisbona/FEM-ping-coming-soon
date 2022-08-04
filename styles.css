@@ -24,6 +24,19 @@ a {
     text-decoration: none;
     color: none;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--pale-blue);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--pale-blue);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--pale-blue);
+  }
 /* =================/RESETS========================*/
 
 body {
@@ -99,7 +112,7 @@ input[type='email'] {
     width: 40%;
     padding: 1em 1em;
     border-radius: 699999px;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--pale-blue);
     outline: none;
     margin-right: 1em;
 }
