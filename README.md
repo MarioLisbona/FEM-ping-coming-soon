@@ -11,10 +11,8 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -49,6 +47,25 @@ Users should be able to:
 
 ## My process
 
+I created the main container and used flexbox to align all the sibling div's for the title, form, error message container and the social links at the bottom of the page.
+
+I used flexbox on the form to arrange the email input and submit button.
+
+A hidden class is used with ```display: none``` to hide the error message. iv used ```classList.remove``` and ```classList.add``` to add and remove the hidden class when the email entered is valid or invalid.
+
+i created a function ```checkEmail(email, emailRegex)``` which takes in two arguments. the email element and a regular expression to check the email is valid. This is used to style the input for a correct email and also give different error messages for an invalid email and an empty email field.
+
+Iv used the following to call the checkEmail function everytime a key is entered into the input field, so essentially giving instant feedback while data is being entered into the input field:
+
+```
+email.oninput = () => {
+    checkEmail(email, emailRegex);
+}
+```
+
+I used Font Awesome for the social icons. I wrapped them in an <a> tag to link to their websites.
+Font Awsome have a class ```fa-swap-opacity``` that you can add to swap the opacity. I wanted to add and remove this class with javaScript and a pseudoclass of :hover for changing the hover state of the social links. I tried and it didnt work. Upon further reading i realised that you need a pro subscription for this feature to work.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -61,51 +78,15 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+i learned to used Font Awesome's icons and change the styling of different icons rather than downloading an image.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Swapping Icon Opacity](https://fontawesome.com/v6/docs/web/style/duotone) - This was a good resource to learn about the styling of icons - even though i couldnt swap the opcaity with a free account.
+- [Styling Placeholder Text](https://www.w3schools.com/howto/howto_css_placeholder.asp) - This resource explained how to style the placeholder text
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@MarioLisbona](https://www.frontendmentor.io/profile/MarioLisbona)
+- Twitter - [@MarioLisbona](https://www.twitter.com/Mariolisbona)
