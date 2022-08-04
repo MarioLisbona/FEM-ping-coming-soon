@@ -201,7 +201,11 @@ button {
 
     input[type='email'], button {
         width: 100%;
-        margin: 1em 0 0 0;
+        margin: 1em;
+    }
+
+    button {
+        margin-top: 1.5em;
     }
 
     .graph-container img {
@@ -216,13 +220,22 @@ button {
     }
 
     .logo-container {
-        margin-top: 5em;
+        margin-top: 3em;
         margin-bottom: 2em;
     }
 
     .logo-container img {
         width: 20%;
     }
+
+    .error-container {
+        position: absolute;
+        /* transform: translateY(300px);
+        transform: translateX(5px);  FOR some reason i couldnt not get translatex or translate Y to work here*/
+        top: 300px;
+        left: 0;
+        right: 50px;
+    }   
 }
 
 
