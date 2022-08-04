@@ -199,6 +199,10 @@ button {
         font-size: 1.3rem;
         margin: 1em;
     }
+
+    .logo-container {
+        margin: 4em 0 3em 0;
+    }
 }
 
 
