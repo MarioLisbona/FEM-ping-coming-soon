@@ -112,6 +112,7 @@ button {
     border: 1px solid var(--blue);
     outline: none;
     color: white;
+    cursor: pointer;
 }
 
 .graph-container {
