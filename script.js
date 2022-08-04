@@ -7,7 +7,6 @@ const emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
 email.oninput = () => {
     checkEmail(email, emailRegex);
-
 }
 
 
