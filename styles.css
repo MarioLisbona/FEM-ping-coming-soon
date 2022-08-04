@@ -198,10 +198,17 @@ button {
     .title {
         font-size: 1.3rem;
         margin: 1em;
+        letter-spacing: normal;
+
     }
 
     .logo-container {
-        margin: 4em 0 3em 0;
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+
+    .logo-container img {
+        width: 20%;
     }
 }
 
