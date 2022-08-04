@@ -13,7 +13,6 @@ email.oninput = () => {
 
 
 function checkEmail(email, regex) {
-    console.log(email, regex);
     if (email.value == '') {
         errorContainer.classList.remove('hidden');
         email.style.border = '1px solid var(--light-red)';
