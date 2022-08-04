@@ -180,6 +180,18 @@ button {
     display: none;
 }
 
+@media (max-width: 375px) {
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input[type='email'], button {
+        width: 100%;
+        margin: 1em 0 0 0;
+    }
+}
+
 
 
 /* Frontend Mentor Footer */
