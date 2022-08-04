@@ -147,6 +147,13 @@ button {
     border: 1px solid var(--pale-blue);
 }
 
+.fa-facebook-f,
+.fa-twitter, 
+.fa-instagram{
+    font-size:12px;
+    color: var(--blue);
+}
+
 .copyright-container {
     color: var(--gray);
     font-size: .75rem;
