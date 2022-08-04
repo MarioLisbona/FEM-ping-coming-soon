@@ -16,7 +16,7 @@ function checkEmail(email, regex) {
     if (email.value == '') {
         errorContainer.classList.remove('hidden');
         email.style.border = '1px solid var(--light-red)';
-        errorMsg.textContent = 'Email cannot be empty';
+        errorMsg.textContent = "Whoops! It looks like you forgot to add your email";
     } else if (!email.value.match(regex)) {
         errorContainer.classList.remove('hidden');
         email.style.border = '1px solid var(--light-red)';
